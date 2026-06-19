@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class JewellerySettings(Document):
+class PPSettings(Document):
 	pass
