@@ -9,9 +9,9 @@
  ],
  "fields": [
   {
-   "fieldname": "metal_mapping",
-   "fieldtype": "Table",
-   "label": "Metal Mapping",
+   "fieldname": "metal_mapping"
+   "fieldtype": "Table"
+   "label": "Metal Mapping"
    "options": "Metal Mapping"
   }
  ],
