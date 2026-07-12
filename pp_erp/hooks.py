@@ -135,13 +135,12 @@ doctype_js = {
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+
+doc_events = {
+    "BOM": {
+        "on_update": "pp_erp.api.bom_utils.restore_manual_rate"
+    }
+}
 
 # Scheduled Tasks
 # ---------------
