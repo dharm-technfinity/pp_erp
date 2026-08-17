@@ -12,7 +12,7 @@
    "fieldname": "metal_mapping",
    "fieldtype": "Table",
    "label": "Metal Mapping",
-   "options": "Metal Mapping",
+   "options": "Metal Mapping"
   }
  ],
  "grid_page_length": 50,
