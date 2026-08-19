@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-07-23 00:41:59.911770",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_is3v",
+  "company",
+  "branch",
+  "posting_date",
+  "datetime",
+  "party_type",
+  "party",
+  "metal_type",
+  "voucher_type",
+  "voucher_name",
+  "balance",
+  "pure_wt_cr",
+  "net_wt_cr",
+  "amount_credit",
+  "pure_wt_dr",
+  "net_wt_dr",
+  "amount_debit",
+  "is_cancel"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_is3v",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "search_index": 1
+  },
+  {
+   "fieldname": "datetime",
+   "fieldtype": "Datetime",
+   "label": "Datetime",
+   "search_index": 1
+  },
+  {
+   "fieldname": "party_type",
+   "fieldtype": "Link",
+   "label": "Party Type",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "party",
+   "fieldtype": "Dynamic Link",
+   "label": "Party",
+   "options": "party_type"
+  },
+  {
+   "fieldname": "metal_type",
+   "fieldtype": "Select",
+   "label": "Metal Type",
+   "options": "Gold\nSilver\nPlatinum"
+  },
+  {
+   "fieldname": "voucher_type",
+   "fieldtype": "Link",
+   "label": "Voucher Type",
+   "options": "DocType",
+   "search_index": 1
+  },
+  {
+   "fieldname": "voucher_name",
+   "fieldtype": "Dynamic Link",
+   "label": "Voucher Name",
+   "options": "voucher_type",
+   "search_index": 1
+  },
+  {
+   "fieldname": "balance",
+   "fieldtype": "Float",
+   "label": "Balance"
+  },
+  {
+   "fieldname": "pure_wt_cr",
+   "fieldtype": "Float",
+   "label": "Pure Wt Cr"
+  },
+  {
+   "fieldname": "net_wt_cr",
+   "fieldtype": "Float",
+   "label": "Net Wt Cr"
+  },
+  {
+   "fieldname": "amount_credit",
+   "fieldtype": "Float",
+   "label": "Amount Credit"
+  },
+  {
+   "fieldname": "pure_wt_dr",
+   "fieldtype": "Float",
+   "label": "Pure Wt Dr"
+  },
+  {
+   "fieldname": "net_wt_dr",
+   "fieldtype": "Float",
+   "label": "Net Wt Dr"
+  },
+  {
+   "fieldname": "amount_debit",
+   "fieldtype": "Float",
+   "label": "Amount Debit"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_cancel",
+   "fieldtype": "Check",
+   "label": "Is Cancel"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-08-19 16:14:29.168454",
+ "modified_by": "Administrator",
+ "module": "Jewellers",
+ "name": "Purity Ledger Entry",
+ "owner": "test_user@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

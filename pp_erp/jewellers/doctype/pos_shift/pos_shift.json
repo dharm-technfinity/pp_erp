@@ -1,0 +1,185 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "POS-SHIFT-.YYYY.-.#####",
+ "creation": "2026-08-06 12:47:32.092980",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "user",
+  "cashier_name",
+  "opening_cash",
+  "branch",
+  "column_break_zobv",
+  "counter",
+  "shift_start_datetime",
+  "status",
+  "section_break_tcks",
+  "shift_end_datetime",
+  "expected_cash",
+  "total_sales_amount",
+  "closing_remarks",
+  "column_break_virn",
+  "closing_cash",
+  "cash_difference",
+  "total_transactions",
+  "section_break_yffc",
+  "sales_team",
+  "section_break_rpsm",
+  "pos_shift_payment_summary",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
+  },
+  {
+   "fetch_from": "user.full_name",
+   "fieldname": "cashier_name",
+   "fieldtype": "Data",
+   "label": "Cashier Name"
+  },
+  {
+   "fieldname": "opening_cash",
+   "fieldtype": "Currency",
+   "label": "Opening Cash"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "column_break_zobv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "counter",
+   "fieldtype": "Data",
+   "label": "Counter"
+  },
+  {
+   "fieldname": "shift_start_datetime",
+   "fieldtype": "Datetime",
+   "label": "Shift Start Datetime"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nClosed"
+  },
+  {
+   "fieldname": "section_break_tcks",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "shift_end_datetime",
+   "fieldtype": "Datetime",
+   "label": "Shift End Datetime"
+  },
+  {
+   "fieldname": "expected_cash",
+   "fieldtype": "Currency",
+   "label": "Expected Cash"
+  },
+  {
+   "fieldname": "total_sales_amount",
+   "fieldtype": "Currency",
+   "label": "Total Sales Amount"
+  },
+  {
+   "fieldname": "closing_remarks",
+   "fieldtype": "Small Text",
+   "label": "Closing Remarks"
+  },
+  {
+   "fieldname": "column_break_virn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "closing_cash",
+   "fieldtype": "Currency",
+   "label": "Closing Cash"
+  },
+  {
+   "fieldname": "cash_difference",
+   "fieldtype": "Currency",
+   "label": "Cash Difference"
+  },
+  {
+   "fieldname": "total_transactions",
+   "fieldtype": "Int",
+   "label": "Total Transactions"
+  },
+  {
+   "fieldname": "section_break_yffc",
+   "fieldtype": "Section Break",
+   "label": "Sales Team"
+  },
+  {
+   "fieldname": "sales_team",
+   "fieldtype": "Table",
+   "label": "Sales Team",
+   "options": "Sales Team"
+  },
+  {
+   "fieldname": "section_break_rpsm",
+   "fieldtype": "Section Break",
+   "label": "POS Summary"
+  },
+  {
+   "fieldname": "pos_shift_payment_summary",
+   "fieldtype": "Table",
+   "label": "POS Shift Payment Summary",
+   "options": "POS Shift Payment Summary"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "POS Shift",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-08-19 16:15:02.812287",
+ "modified_by": "Administrator",
+ "module": "Jewellers",
+ "name": "POS Shift",
+ "naming_rule": "Expression",
+ "owner": "test_user@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

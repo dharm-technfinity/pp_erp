@@ -1,0 +1,196 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "JSCH-.#####",
+ "creation": "2026-08-02 16:35:51.664878",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "scheme_name",
+  "scheme_type",
+  "column_break_hr0m",
+  "valid_from",
+  "is_disable",
+  "is_scheme_tranferable",
+  "section_break_mujj",
+  "no_of_emi",
+  "minimun_emi",
+  "maximum_emi",
+  "emi_multiple_off",
+  "column_break_jgd9",
+  "scheme_maturity_month",
+  "skip_months",
+  "has_bonus_month",
+  "bonus_installments",
+  "section_break_neen",
+  "maturity_benefits_applicable_on",
+  "column_break_qtfq",
+  "accumulate_gold",
+  "section_break_a608",
+  "scheme_duration_table",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "scheme_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "Scheme Name"
+  },
+  {
+   "fieldname": "scheme_type",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Scheme Type"
+  },
+  {
+   "fieldname": "column_break_hr0m",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "valid_from",
+   "fieldtype": "Date",
+   "label": "Valid From"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_disable",
+   "fieldtype": "Check",
+   "label": "Is Disable"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_scheme_tranferable",
+   "fieldtype": "Check",
+   "label": "Is Scheme Tranferable"
+  },
+  {
+   "fieldname": "section_break_mujj",
+   "fieldtype": "Section Break",
+   "label": "Monthly Installment Details"
+  },
+  {
+   "fieldname": "no_of_emi",
+   "fieldtype": "Int",
+   "label": "No of EMI"
+  },
+  {
+   "fieldname": "minimun_emi",
+   "fieldtype": "Currency",
+   "label": "Minimum EMI"
+  },
+  {
+   "fieldname": "maximum_emi",
+   "fieldtype": "Currency",
+   "label": "Maximum EMI"
+  },
+  {
+   "fieldname": "emi_multiple_off",
+   "fieldtype": "Currency",
+   "label": "EMI Multiple Off"
+  },
+  {
+   "fieldname": "column_break_jgd9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "scheme_maturity_month",
+   "fieldtype": "Int",
+   "label": "Scheme Maturity Month"
+  },
+  {
+   "fieldname": "skip_months",
+   "fieldtype": "Int",
+   "label": "Skip Months"
+  },
+  {
+   "default": "0",
+   "fieldname": "has_bonus_month",
+   "fieldtype": "Check",
+   "label": "Has Bonus Month"
+  },
+  {
+   "depends_on": "eval:doc.has_bonus_month",
+   "fieldname": "bonus_installments",
+   "fieldtype": "Int",
+   "label": "Bonus Installments"
+  },
+  {
+   "fieldname": "section_break_neen",
+   "fieldtype": "Section Break",
+   "label": "Maturity Benefits"
+  },
+  {
+   "fieldname": "maturity_benefits_applicable_on",
+   "fieldtype": "Select",
+   "label": "Maturity Benefits Applicable On",
+   "options": "Making Chages\nMaking Chages + Accumulated Gold\nMaking Chages + Diamond Value + PPJ Contribution"
+  },
+  {
+   "fieldname": "column_break_qtfq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "description": "Enable this option to accumulate gold based on the gold rate on the payment date",
+   "fieldname": "accumulate_gold",
+   "fieldtype": "Check",
+   "label": "Accumulate Gold"
+  },
+  {
+   "fieldname": "section_break_a608",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_bulk_edit": 1,
+   "fieldname": "scheme_duration_table",
+   "fieldtype": "Table",
+   "label": "Scheme Duration Table",
+   "options": "Scheme Duration Table"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Jewellery Scheme",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-08-19 16:15:50.206470",
+ "modified_by": "Administrator",
+ "module": "Jewellers",
+ "name": "Jewellery Scheme",
+ "naming_rule": "Expression",
+ "owner": "test_user@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "scheme_name",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

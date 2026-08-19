@@ -1,0 +1,141 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-07-18 18:56:54.136998",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_vafp",
+  "amended_from",
+  "effective_from",
+  "price_list",
+  "supplier",
+  "currency",
+  "outright_rate",
+  "column_break_ftn2",
+  "diamond_purchase_type",
+  "diamond_type",
+  "diamond_colour",
+  "diamond_grade",
+  "diamond_shape",
+  "diamond_quality",
+  "diamond_seive_size"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_vafp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Diamond Price List",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "effective_from",
+   "fieldtype": "Date",
+   "label": "Effective From"
+  },
+  {
+   "fieldname": "price_list",
+   "fieldtype": "Link",
+   "label": "Price List",
+   "options": "Price List"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "link_filters": "[[\"Supplier\",\"supplier_group\",\"=\",\"Subcontractor\"]]",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "outright_rate",
+   "fieldtype": "Float",
+   "label": "Outright Rate"
+  },
+  {
+   "fieldname": "column_break_ftn2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "diamond_purchase_type",
+   "fieldtype": "Select",
+   "label": "Purchase Type"
+  },
+  {
+   "fieldname": "diamond_type",
+   "fieldtype": "Select",
+   "label": "Type"
+  },
+  {
+   "fieldname": "diamond_colour",
+   "fieldtype": "Select",
+   "label": "Colour"
+  },
+  {
+   "fieldname": "diamond_grade",
+   "fieldtype": "Select",
+   "label": "Grade"
+  },
+  {
+   "fieldname": "diamond_shape",
+   "fieldtype": "Select",
+   "label": "Shape"
+  },
+  {
+   "fieldname": "diamond_quality",
+   "fieldtype": "Select",
+   "label": "Quality"
+  },
+  {
+   "fieldname": "diamond_seive_size",
+   "fieldtype": "Select",
+   "label": "Seive Size"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-08-19 16:16:35.210590",
+ "modified_by": "Administrator",
+ "module": "Jewellers",
+ "name": "Diamond Price List",
+ "owner": "test_user@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
