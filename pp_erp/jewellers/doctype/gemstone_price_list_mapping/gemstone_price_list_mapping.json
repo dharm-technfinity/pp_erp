@@ -1,0 +1,40 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-07-23 01:18:23.557926",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_vl6w",
+  "item_attribute"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_vl6w",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "item_attribute",
+   "fieldtype": "Link",
+   "label": "Item Attribute",
+   "options": "Item Attribute"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-08-19 16:16:09.205317",
+ "modified_by": "Administrator",
+ "module": "Jewellers",
+ "name": "Gemstone Price List Mapping",
+ "owner": "test_user@gmail.com",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

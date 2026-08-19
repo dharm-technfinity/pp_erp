@@ -1,0 +1,215 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "JSA-.####",
+ "creation": "2026-08-03 16:50:26.614486",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer",
+  "emi_amount",
+  "date",
+  "end_date",
+  "sales_invoice",
+  "company",
+  "column_break_zlve",
+  "scheme",
+  "scheme_name",
+  "status",
+  "used",
+  "metal_touch",
+  "branch",
+  "section_break_ufol",
+  "sales_team",
+  "section_break_ptcw",
+  "jewellery_scheme_assignment_details",
+  "amended_from",
+  "section_break_vnwx",
+  "total_amount",
+  "column_break_cceh",
+  "total_gold_qty",
+  "column_break_qasx",
+  "total_gold_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "emi_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "EMI Amount",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "sales_invoice",
+   "fieldtype": "Link",
+   "label": "Sales Invoice",
+   "options": "Sales Invoice"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_zlve",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "scheme",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Scheme",
+   "options": "Jewellery Scheme",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "scheme.scheme_name",
+   "fieldname": "scheme_name",
+   "fieldtype": "Data",
+   "label": "Scheme Name"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nClosed\nMatured"
+  },
+  {
+   "default": "0",
+   "fieldname": "used",
+   "fieldtype": "Check",
+   "label": "Used"
+  },
+  {
+   "fieldname": "metal_touch",
+   "fieldtype": "Select",
+   "label": "Metal Touch"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "section_break_ufol",
+   "fieldtype": "Section Break",
+   "label": "Sales Team"
+  },
+  {
+   "fieldname": "sales_team",
+   "fieldtype": "Table",
+   "label": "Sales Team",
+   "options": "Sales Team"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "section_break_ptcw",
+   "fieldtype": "Section Break",
+   "read_only": 1
+  },
+  {
+   "allow_bulk_edit": 1,
+   "allow_on_submit": 1,
+   "fieldname": "jewellery_scheme_assignment_details",
+   "fieldtype": "Table",
+   "label": "Jewellery Scheme Assignment Details",
+   "options": "Jewellery Scheme Assignment Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Jewellery Scheme Assignment",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_vnwx",
+   "fieldtype": "Section Break",
+   "hide_border": 1
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "column_break_cceh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_gold_qty",
+   "fieldtype": "Float",
+   "label": "Total Gold Qty"
+  },
+  {
+   "fieldname": "column_break_qasx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_gold_amount",
+   "fieldtype": "Currency",
+   "label": "Total Gold Amount"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-08-19 16:15:34.716935",
+ "modified_by": "Administrator",
+ "module": "Jewellers",
+ "name": "Jewellery Scheme Assignment",
+ "naming_rule": "Expression",
+ "owner": "test_user@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

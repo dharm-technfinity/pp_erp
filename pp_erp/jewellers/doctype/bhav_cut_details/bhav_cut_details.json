@@ -1,0 +1,167 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-07-24 14:30:57.985956",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "purchase_receipt",
+  "item",
+  "settlement_item",
+  "settlement_purity",
+  "input_weight",
+  "select",
+  "column_break_urtg",
+  "input_purity",
+  "pure_gold_weight",
+  "pg_purity",
+  "pg_weight",
+  "gold_rate",
+  "labour_type",
+  "column_break_m5jl",
+  "labour_value",
+  "labour_gold_equivalent",
+  "final_settlement_qty",
+  "amount",
+  "purchase_receipt_item",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "purchase_receipt",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Purchase Receipt",
+   "options": "Purchase Receipt"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "settlement_item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Settlement Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "settlement_purity",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Settlement Purity"
+  },
+  {
+   "fieldname": "input_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Input Weight"
+  },
+  {
+   "default": "0",
+   "fieldname": "select",
+   "fieldtype": "Check",
+   "label": "Select"
+  },
+  {
+   "fieldname": "column_break_urtg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "input_purity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Input Purity"
+  },
+  {
+   "fieldname": "pure_gold_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Pure Gold Weight"
+  },
+  {
+   "fieldname": "pg_purity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "PG Purity"
+  },
+  {
+   "fieldname": "pg_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "PG Weight"
+  },
+  {
+   "fieldname": "gold_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Gold Rate"
+  },
+  {
+   "fieldname": "labour_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Labour Type"
+  },
+  {
+   "fieldname": "column_break_m5jl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "labour_value",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Labour Value"
+  },
+  {
+   "fieldname": "labour_gold_equivalent",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Labour Gold Equivalent"
+  },
+  {
+   "fieldname": "final_settlement_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Final Settlement Qty"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount"
+  },
+  {
+   "fieldname": "purchase_receipt_item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Purchase Receipt Item",
+   "options": "Purchase Receipt Item"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-08-19 16:16:53.082021",
+ "modified_by": "Administrator",
+ "module": "Jewellers",
+ "name": "Bhav Cut Details",
+ "owner": "test_user@gmail.com",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

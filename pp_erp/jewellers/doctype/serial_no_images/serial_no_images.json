@@ -1,0 +1,131 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-17 17:18:22.759957",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "front_view",
+  "front_view_image",
+  "column_break_jgkl",
+  "back_view",
+  "back_view_image",
+  "section_break_hikp",
+  "top_view",
+  "top_view_image",
+  "column_break_mxok",
+  "bottom_view",
+  "bottom_view_image",
+  "section_break_mkar",
+  "left_view",
+  "left_view_image",
+  "column_break_kkdy",
+  "right_view",
+  "right_view_image"
+ ],
+ "fields": [
+  {
+   "fieldname": "front_view",
+   "fieldtype": "Attach Image",
+   "label": "Front View"
+  },
+  {
+   "fieldname": "front_view_image",
+   "fieldtype": "Image",
+   "label": "Front View Image",
+   "options": "front_view"
+  },
+  {
+   "fieldname": "column_break_jgkl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "back_view",
+   "fieldtype": "Attach Image",
+   "label": "Back View"
+  },
+  {
+   "fieldname": "back_view_image",
+   "fieldtype": "Image",
+   "label": "Back View Image",
+   "options": "back_view"
+  },
+  {
+   "fieldname": "section_break_hikp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "top_view",
+   "fieldtype": "Attach Image",
+   "label": "Top View"
+  },
+  {
+   "fieldname": "top_view_image",
+   "fieldtype": "Image",
+   "label": "Top View Image",
+   "options": "top_view"
+  },
+  {
+   "fieldname": "column_break_mxok",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bottom_view",
+   "fieldtype": "Attach Image",
+   "label": "Bottom View"
+  },
+  {
+   "fieldname": "bottom_view_image",
+   "fieldtype": "Image",
+   "label": "Bottom View Image",
+   "options": "bottom_view"
+  },
+  {
+   "fieldname": "section_break_mkar",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "left_view",
+   "fieldtype": "Attach Image",
+   "label": "Left View"
+  },
+  {
+   "fieldname": "left_view_image",
+   "fieldtype": "Image",
+   "label": "Left View Image",
+   "options": "left_view"
+  },
+  {
+   "fieldname": "column_break_kkdy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "right_view",
+   "fieldtype": "Attach Image",
+   "label": "Right View"
+  },
+  {
+   "fieldname": "right_view_image",
+   "fieldtype": "Image",
+   "label": "Right View Image",
+   "options": "right_view"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-08-19 16:13:32.191266",
+ "modified_by": "Administrator",
+ "module": "Jewellers",
+ "name": "Serial No Images",
+ "owner": "test_user@gmail.com",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

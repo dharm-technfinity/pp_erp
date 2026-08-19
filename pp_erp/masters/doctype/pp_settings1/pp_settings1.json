@@ -1,0 +1,158 @@
+{
+ "_liked_by": "[\"Administrator\"]",
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-05-27 20:45:52.479771",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "tab_break_one3",
+  "metal_mapping1",
+  "tab_5_tab",
+  "item_catefory_wise_diamond_margin",
+  "tounch_wise_sales_margin_tab",
+  "tounch_wise_margin",
+  "tab_break_o5sd",
+  "diamond_price_list_mapping",
+  "tab_break_ufko",
+  "gemstone_price_list_mapping",
+  "tab_7_tab",
+  "gold_purchase_setting",
+  "tab_8_tab",
+  "tab_9_tab",
+  "tab_6_tab",
+  "advance_scheme_account",
+  "tab_10_tab",
+  "pos_role"
+ ],
+ "fields": [
+  {
+   "fieldname": "tab_break_one3",
+   "fieldtype": "Tab Break",
+   "label": "Metal Setings"
+  },
+  {
+   "fieldname": "metal_mapping1",
+   "fieldtype": "Table",
+   "label": "Metal Mapping",
+   "options": "Metal Mapping1"
+  },
+  {
+   "fieldname": "tab_5_tab",
+   "fieldtype": "Tab Break",
+   "label": "Diamond Setting"
+  },
+  {
+   "fieldname": "item_catefory_wise_diamond_margin",
+   "fieldtype": "Table",
+   "label": "Diamond Sales Margin",
+   "options": "Item Category Wise Diamond Margin"
+  },
+  {
+   "fieldname": "tounch_wise_sales_margin_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tounch Wise Sales Margin"
+  },
+  {
+   "fieldname": "tounch_wise_margin",
+   "fieldtype": "Table",
+   "label": "Tounch Wise Margin",
+   "options": "Tounch Wise Margin"
+  },
+  {
+   "fieldname": "tab_break_o5sd",
+   "fieldtype": "Tab Break",
+   "label": "Diamond Price List Setting"
+  },
+  {
+   "fieldname": "diamond_price_list_mapping",
+   "fieldtype": "Table",
+   "label": "Diamond Price List Mapping",
+   "options": "Diamond Price List Mapping"
+  },
+  {
+   "fieldname": "tab_break_ufko",
+   "fieldtype": "Tab Break",
+   "label": "Gemstone Price List Setting"
+  },
+  {
+   "fieldname": "gemstone_price_list_mapping",
+   "fieldtype": "Table",
+   "label": "Gemstone Price List Mapping",
+   "options": "Gemstone Price List Mapping"
+  },
+  {
+   "fieldname": "tab_7_tab",
+   "fieldtype": "Tab Break",
+   "label": "Gold Purchase Setting"
+  },
+  {
+   "fieldname": "gold_purchase_setting",
+   "fieldtype": "Table",
+   "label": "Gold Purchase Setting",
+   "options": "Gold Purchase Setting"
+  },
+  {
+   "fieldname": "tab_8_tab",
+   "fieldtype": "Tab Break",
+   "label": "Sales Settings"
+  },
+  {
+   "fieldname": "tab_9_tab",
+   "fieldtype": "Tab Break",
+   "label": "Purchase Settings"
+  },
+  {
+   "fieldname": "tab_6_tab",
+   "fieldtype": "Tab Break",
+   "label": "Account Settings"
+  },
+  {
+   "fieldname": "advance_scheme_account",
+   "fieldtype": "Link",
+   "label": "Advance Scheme Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "tab_10_tab",
+   "fieldtype": "Tab Break",
+   "label": "POS Role Settings"
+  },
+  {
+   "fieldname": "pos_role",
+   "fieldtype": "Table",
+   "label": "POS Role",
+   "options": "POS Role"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-08-19 16:20:05.459180",
+ "modified_by": "Administrator",
+ "module": "Masters",
+ "name": "PP Settings1",
+ "owner": "test_user@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

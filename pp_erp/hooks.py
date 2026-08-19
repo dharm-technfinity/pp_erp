@@ -5,6 +5,14 @@ app_description = "ERP For PP Jewellers"
 app_email = "dharm@techfinityhq"
 app_license = "mit"
 
+# Fixtures
+# --------
+# Records exported/synced with the app so they are auto-created on install/migrate
+
+fixtures = [
+    {"dt": "Custom Field", "filters": [["module", "=", "Jewellers"]]},
+]
+
 # Apps
 # ------------------
 

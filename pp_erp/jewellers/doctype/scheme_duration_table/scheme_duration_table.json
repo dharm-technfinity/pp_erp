@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-02 16:37:03.582249",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ltjj",
+  "month",
+  "mc_percentage_discount",
+  "gold_qty",
+  "discount_on_diamond_jewellery",
+  "column_break_ucab",
+  "emi_amount",
+  "mc_discount_amount",
+  "gold_rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ltjj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Month"
+  },
+  {
+   "fieldname": "mc_percentage_discount",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "MC Percentage Discount"
+  },
+  {
+   "fieldname": "gold_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Gold Qty"
+  },
+  {
+   "fieldname": "discount_on_diamond_jewellery",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Discount on Diamond Jewellery"
+  },
+  {
+   "fieldname": "column_break_ucab",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "emi_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "EMI Amount"
+  },
+  {
+   "fieldname": "mc_discount_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "MC Discount Amount"
+  },
+  {
+   "fieldname": "gold_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Gold Rate"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-08-19 16:13:43.163524",
+ "modified_by": "Administrator",
+ "module": "Jewellers",
+ "name": "Scheme Duration Table",
+ "owner": "test_user@gmail.com",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

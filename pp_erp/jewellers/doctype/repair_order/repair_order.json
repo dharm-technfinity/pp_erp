@@ -1,0 +1,417 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-08-08 17:45:33.551878",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_and_order_details_section",
+  "company",
+  "customer",
+  "customer_name",
+  "mobile_no",
+  "column_break_nulp",
+  "branch",
+  "order_date",
+  "order_type",
+  "amended_from",
+  "sold_by_ppj",
+  "section_break_fwtm",
+  "serial_no",
+  "item_category",
+  "column_break_ujrk",
+  "item",
+  "bom",
+  "section_break_bsoe",
+  "bom_item",
+  "section_break_alww",
+  "metal_wt",
+  "metal_amount",
+  "column_break_xzik",
+  "diamond_wt",
+  "diamond_amount",
+  "column_break_xaut",
+  "stone_wt",
+  "stone_amount",
+  "column_break_kpja",
+  "other_wt",
+  "other_amount",
+  "section_break_wytm",
+  "gross_wt",
+  "net_wt",
+  "column_break_mrmm",
+  "making_charges",
+  "total",
+  "section_break_rhzg",
+  "float_qkkv",
+  "section_break_lpim",
+  "remarks",
+  "section_break_yszl",
+  "issue_type",
+  "column_break_kajc",
+  "supplier",
+  "operation",
+  "section_break_ukve",
+  "issue_date",
+  "issue_stock_entry",
+  "source_warehouse",
+  "column_break_sqvx",
+  "receive_date",
+  "receive_stock_entry",
+  "target_warehouse",
+  "section_break_bvbq",
+  "receive_bom_item",
+  "section_break_zylh",
+  "warehouse",
+  "extra_material"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_and_order_details_section",
+   "fieldtype": "Section Break",
+   "label": "Customer and Order Details"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No"
+  },
+  {
+   "fieldname": "column_break_nulp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "order_date",
+   "fieldtype": "Date",
+   "label": "Order Date"
+  },
+  {
+   "fieldname": "order_type",
+   "fieldtype": "Select",
+   "label": "Order Type",
+   "options": "Repair\nModification"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Repair Order",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "sold_by_ppj",
+   "fieldtype": "Check",
+   "label": "Sold By PPJ"
+  },
+  {
+   "fieldname": "section_break_fwtm",
+   "fieldtype": "Section Break",
+   "label": "Item Details"
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Link",
+   "label": "Serial No",
+   "options": "Serial No"
+  },
+  {
+   "fieldname": "item_category",
+   "fieldtype": "Link",
+   "label": "Item Category",
+   "options": "Attribute Value"
+  },
+  {
+   "fieldname": "column_break_ujrk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "serial_no.item_code",
+   "fetch_if_empty": 1,
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "serial_no.custom_bom",
+   "fetch_if_empty": 1,
+   "fieldname": "bom",
+   "fieldtype": "Link",
+   "label": "BOM",
+   "options": "BOM"
+  },
+  {
+   "fieldname": "section_break_bsoe",
+   "fieldtype": "Section Break",
+   "label": "BOM Details"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "bom_item",
+   "fieldtype": "Table",
+   "label": "BOM Item",
+   "options": "BOM Item"
+  },
+  {
+   "fieldname": "section_break_alww",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "metal_wt",
+   "fieldtype": "Float",
+   "label": "Metal Wt"
+  },
+  {
+   "fieldname": "metal_amount",
+   "fieldtype": "Currency",
+   "label": "Metal Amount"
+  },
+  {
+   "fieldname": "column_break_xzik",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "diamond_wt",
+   "fieldtype": "Float",
+   "label": "Diamond Wt"
+  },
+  {
+   "fieldname": "diamond_amount",
+   "fieldtype": "Currency",
+   "label": "Diamond Amount"
+  },
+  {
+   "fieldname": "column_break_xaut",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stone_wt",
+   "fieldtype": "Float",
+   "label": "Stone Wt"
+  },
+  {
+   "fieldname": "stone_amount",
+   "fieldtype": "Currency",
+   "label": "Stone Amount"
+  },
+  {
+   "fieldname": "column_break_kpja",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "other_wt",
+   "fieldtype": "Float",
+   "label": "Other Wt"
+  },
+  {
+   "fieldname": "other_amount",
+   "fieldtype": "Currency",
+   "label": "Other Amount"
+  },
+  {
+   "fieldname": "section_break_wytm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "gross_wt",
+   "fieldtype": "Float",
+   "label": "Gross Wt"
+  },
+  {
+   "fieldname": "net_wt",
+   "fieldtype": "Float",
+   "label": "Net Wt"
+  },
+  {
+   "fieldname": "column_break_mrmm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "making_charges",
+   "fieldtype": "Currency",
+   "label": "Making Charges"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total"
+  },
+  {
+   "fieldname": "section_break_rhzg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "float_qkkv",
+   "fieldtype": "Float"
+  },
+  {
+   "fieldname": "section_break_lpim",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_yszl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "issue_type",
+   "fieldtype": "Select",
+   "label": "Issue Type",
+   "options": "Karigar\nSubcontractor\nIn House"
+  },
+  {
+   "fieldname": "column_break_kajc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "operation",
+   "fieldtype": "Select",
+   "label": "Operation",
+   "options": "\nWashing\nPolish"
+  },
+  {
+   "fieldname": "section_break_ukve",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "issue_date",
+   "fieldtype": "Date",
+   "label": "Issue Date"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "issue_stock_entry",
+   "fieldtype": "Link",
+   "label": "Issue Stock Entry",
+   "options": "Stock Entry"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "source_warehouse",
+   "fieldtype": "Link",
+   "label": "Source Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "column_break_sqvx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "receive_date",
+   "fieldtype": "Date",
+   "label": "Receive Date"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "receive_stock_entry",
+   "fieldtype": "Link",
+   "label": "Receive Stock Entry",
+   "options": "Stock Entry"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "target_warehouse",
+   "fieldtype": "Link",
+   "label": "Target Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "section_break_bvbq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "receive_bom_item",
+   "fieldtype": "Table",
+   "label": "Receive BOM Item",
+   "options": "BOM Item"
+  },
+  {
+   "fieldname": "section_break_zylh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "extra_material",
+   "fieldtype": "Table",
+   "label": "Extra Material",
+   "options": "BOM Item"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-08-19 16:14:02.837426",
+ "modified_by": "Administrator",
+ "module": "Jewellers",
+ "name": "Repair Order",
+ "owner": "test_user@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
